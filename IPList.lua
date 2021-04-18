@@ -6,7 +6,6 @@ oneat = nil
 function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
-        --print("IP Kontrol ediliyor....")
         serverip = ip 
         if table.find(IPlist, serverip) then
         	if oneat then return end
