@@ -23,4 +23,5 @@ if res == getThisResource() then
         end
     end)    
 end
+end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
