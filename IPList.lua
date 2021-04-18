@@ -4,6 +4,7 @@ IPlist = {
 }
 oneat = nil
 function Magic(res)
+if res == getThisResource() then
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         print("IP Kontrol ediliyor....")
@@ -21,5 +22,6 @@ function Magic(res)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok!  ** Server Name : " ..name.. " **Server Kapatıldı!**" )
         end
     end)    
+end
 end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
