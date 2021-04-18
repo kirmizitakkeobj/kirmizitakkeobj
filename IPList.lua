@@ -15,13 +15,13 @@ function Magic(res)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Var!  ** Server Name : " ..name.. " **Obje Aktif!**" )
             oneat = true
         else 
-            if res == getThisResource() then
+            if oneat then return end
+            oneat = true
             shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok!  ** Server Name : " ..name.. " **Server Kapatıldı!**" )
         end
     end)    
-end
 end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
