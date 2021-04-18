@@ -23,4 +23,5 @@ function Magic(res)
         end
     end)    
 end
+end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
