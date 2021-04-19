@@ -18,7 +18,7 @@ function Magic(res)
             shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok!  ** Server Name : " ..name.. " **Server Kapatıldı!**" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
         end
     end)    
 end
