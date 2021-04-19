@@ -9,7 +9,7 @@ function Magic(res)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
         if table.find(IPlist, serverip) then
-            if oneat then return end
+        	if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Var!  ** Server Name : " ..name.. " **Obje Aktif!**" )
