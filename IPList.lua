@@ -1,5 +1,5 @@
 IPlist = {
-  "185.171.1.183",  --Alchare Roleplay --Toplu Alım
+  "185.171.1.183",   --Alchare Roleplay --Toplu Alım
   "89.252.161.144",  --CAYP LOCAL
   "217.195.197.80",  --Queen Roleplay --Acibadem Hastanesi
   "185.103.199.139", --Valex Roleplay --LQ Ron Gas Station
@@ -7,7 +7,8 @@ IPlist = {
   "213.142.156.142", --Reina Rolepaly --PD DIŞ
   "51.210.22.206",   --Bedellin Roleplay --LQ Ron Gas Station
   "40.121.84.120",   --Hydra Roleplay --Acibadem Hastanesi
-  "213.32.61.83"     --Zion Roleplay --Toplu Alım
+  "213.32.61.83",    --Zion Roleplay --Toplu Alım
+  "54.36.0.87"       --Turan Roleplay --LQ Ron Gas Station
 }
 oneat = nil
 function Magic(res)
