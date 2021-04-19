@@ -5,7 +5,8 @@ IPlist = {
   "185.103.199.139", --Valex Roleplay --LQ Ron Gas Station
   "193.31.118.14",   --Anchor Roleplay --McDonald's
   "213.142.156.142", --Reina Rolepaly --PD DIŞ
-  "51.210.22.206"    --Bedellin Roleplay --LQ Ron Gas Station
+  "51.210.22.206",   --Bedellin Roleplay --LQ Ron Gas Station
+  "40.121.84.120"    --Hydra Roleplay --Acibadem Hastanesi    
 }
 oneat = nil
 function Magic(res)
@@ -17,7 +18,7 @@ function Magic(res)
         	if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.."/n Lisans:  **Var!  ** Server Name : " ..name.. " **Obje Aktif!**" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.."/nLisans:  **Var!  ** Server Name : " ..name.. " **Obje Aktif!**" )
             oneat = true
         else 
             shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
