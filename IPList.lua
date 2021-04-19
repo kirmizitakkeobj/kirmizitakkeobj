@@ -1,6 +1,7 @@
 IPlist = {
-  "213.226.119.27", --ALCHERA ROLEPLAY  
-  "89.252.161.144"  --Cayp LOCAL
+  "213.226.119.27", --ALCHERA ROLEPLAY 
+  "89.252.161.144", --CAYP LOCAL
+  "217.195.197.80"
 }
 oneat = nil
 function Magic(res)
