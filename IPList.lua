@@ -19,7 +19,7 @@ function Magic(res)
         	if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
-            sendMessage("objelog", "**Obje Adı: **" ..getResourceName(res) .."\n**Sunucu IP: **"..ip.." **\nLisans:** Var""\n**Sunucu Adı: **"..name)
+            sendMessage("objelog", "**Obje Adı: **" ..getResourceName(res) .."\n**Sunucu IP: **"..ip.." **\nLisans:** Var"\n**Sunucu Adı: **"..name)
             oneat = true
         else 
             shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
