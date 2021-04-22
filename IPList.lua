@@ -11,7 +11,8 @@ IPlist = {
   "54.36.0.87",      --Turan Roleplay --LQ Ron Gas Station
   "217.195.197.63",  --Nice Roleplay --McDonald's --İsbankasiATM
   "51.178.185.69",   --AnonyTurks Roleplay --MD İNT --PD DIŞ
-  "89.252.161.135"   --Aspera Roleplay --İsbankasiATM --PD DIŞ
+  "89.252.161.135",  --Aspera Roleplay --İsbankasiATM --PD DIŞ
+  "2.59.116.108"     --CEKILIS KAZANANI --MC 
 }
 oneat = nil
 function Magic(res)
