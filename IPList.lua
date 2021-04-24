@@ -5,7 +5,7 @@ IPlist = {
   "185.103.199.139", --Valex Roleplay --LQ Ron Gas Station
   "193.31.118.14",   --Anchor Roleplay --McDonald's
   "213.142.156.142", --Reina Rolepaly --PD DIŞ
-  "51.210.22.206",   --Bedellin Roleplay --LQ Ron Gas Station
+  "51.210.22.206",   --Bedellin Roleplay --LQ Ron Gas Station --KVP İNT --OCAK İNT
   "40.121.84.120",   --Hydra Roleplay --Acibadem Hastanesi
   "213.32.61.83",    --Zion Roleplay --McDonald's --İsbankasiATM --MD DIŞ --PD DIŞ
   "54.36.0.87",      --Turan Roleplay --LQ Ron Gas Station
