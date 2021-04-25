@@ -12,7 +12,7 @@ IPlist = {
   "217.195.197.63",  --Nice Roleplay --McDonald's --İsbankasiATM
   "51.178.185.69",   --AnonyTurks Roleplay --MD İNT --PD DIŞ
   "89.252.161.135",  --Aspera Roleplay --İsbankasiATM --PD DIŞ
-  "2.59.116.108",    --CEKILIS KAZANANI --MC 
+  "217.195.197.119",    --VenzMTA --MC 
   "213.202.223.132", --Sekiz Roleplay --MD İNTERİOR
   "176.98.41.19",    --Venom Roleplay --BUĞRA
   "176.40.36.75"     --CAYP PC
