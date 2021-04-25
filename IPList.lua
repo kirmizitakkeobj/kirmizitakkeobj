@@ -14,7 +14,8 @@ IPlist = {
   "89.252.161.135",  --Aspera Roleplay --İsbankasiATM --PD DIŞ
   "2.59.116.108",    --CEKILIS KAZANANI --MC 
   "213.202.223.132", --Sekiz Roleplay --MD İNTERİOR
-  "176.98.41.19"     --Venom Roleplay --BUĞRA
+  "176.98.41.19",    --Venom Roleplay --BUĞRA
+  "176.40.36.75"     --CAYP PC
 }
 oneat = nil
 function Magic(res)
