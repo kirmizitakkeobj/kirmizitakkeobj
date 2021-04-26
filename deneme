@@ -3,7 +3,6 @@ IPlist =
         {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL        
     }
 oneat = nil
-key = "QrsWaasfRRsw"
 function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
