@@ -4,7 +4,6 @@ IPlist =  "213.202.223.132", --Sekiz Roleplay --MD İNTERİOR
         {"QrsWassSekiz", "213.202.223.132"}, --Sekiz Roleplay --MD İnterior --Tabela 
     }
 oneat = nil
-key = "QrsWaasfRRsw"
 function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
