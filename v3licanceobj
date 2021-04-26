@@ -10,7 +10,7 @@ function Magic(res)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
     if tostring(ip) then 
-            for i, data in ipairs(IPlist) do
+            for i, data in ipairs(IPlistt) do
                 if data[2] == ip then 
                 data1 = data[1]
                 data2 = data[2]
