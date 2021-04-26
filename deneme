@@ -3,6 +3,7 @@ IPlist =
         {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL        
     }
 oneat = nil
+key = "QrsWaasfRRsw"
 function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
@@ -15,7 +16,7 @@ function Magic(res)
                 data2 = data[2]
                 end
             end
-        if data1 == key and if data2 == ip then 
+        if data1 == key then 
             if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
