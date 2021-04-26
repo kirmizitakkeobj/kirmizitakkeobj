@@ -9,7 +9,7 @@ function Magic(res)
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
-    if ip then 
+    if tonumber(ip) then 
             for i, data in ipairs(IPlist) do
                 if data[2] == ip then 
                 data1 = data[1]
