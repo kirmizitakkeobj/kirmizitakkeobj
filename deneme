@@ -1,14 +1,15 @@
 IPlist = 
     {
-        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL
+        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL        
     }
 oneat = nil
+key = "QrsWaasfRRsw"
 function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
-  if tostring(ip) then 
+    if tostring(ip) then 
             for i, data in ipairs(IPlist) do
                 if data[2] == ip then 
                 data1 = data[1]
@@ -19,17 +20,17 @@ function Magic(res)
             if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  Var(V2 SÜRÜM)!   Server Name : " ..name.. " Obje Aktif!" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Var(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Obje Aktif!**" )
             oneat = true
         else 
             shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  Yok(V2 SÜRÜM)!   Server Name : " ..name.. " Sunucu Kapatıldı!" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
         end
     else 
          print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
     end
-    end)
+    end)    
 end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
