@@ -8,8 +8,7 @@ function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         --print("IP Kontrol ediliyor....")
-        serverip = ip 
-    if tonumber(ip) then 
+        serverip = ip  
             for i, data in ipairs(IPlist) do
                 if data[2] == ip then 
                 data1 = data[1]
@@ -22,6 +21,7 @@ if not data1 then
             setElementData(root, "setElementData", nil)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
 return end
+if tonumber(ip) then
         if data1 == keygetir() then 
             if oneat then return end
             setElementData(root, "setElementData", 1)
