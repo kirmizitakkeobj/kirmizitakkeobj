@@ -1,6 +1,7 @@
-IPlist = 
+IPlist =  "213.202.223.132", --Sekiz Roleplay --MD İNTERİOR
     {
-        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL        
+        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL      
+        {"QrsWassSekiz", "213.202.223.132"}, --Sekiz Roleplay --MD İnterior --Tabela 
     }
 oneat = nil
 key = "QrsWaasfRRsw"
