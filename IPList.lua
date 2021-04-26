@@ -1,6 +1,6 @@
 IPlist = {
   "213.226.199.27",  --Alchare Roleplay --McDonald's --PD DIŞ --İsbankasiATM --LQ Ron GS
-  "89.252.161.144",  --CAYP LOCAL
+  --"89.252.161.144",  --CAYP LOCAL
   "217.195.197.80",  --Queen Roleplay --MD DIŞ
   "185.103.199.139", --Valex Roleplay --LQ Ron Gas Station
   "193.31.118.14",   --Anchor Roleplay --McDonald's
