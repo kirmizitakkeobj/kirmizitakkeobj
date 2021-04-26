@@ -28,8 +28,8 @@ function Magic(res)
             setElementData(root, "setElementData", nil)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
         end
-    else 
-         print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
+    --else 
+         --print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
     end
     end)    
 end
