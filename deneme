@@ -1,50 +1,35 @@
 IPlist = 
     {
-        {"QrsWaasfRRsw", "89.252.161.1445"},  --CAYP LOCAL     
-        {"QrsWaasfRRsw1", "176.40.39.2325"},  --CAYP LOCAL   
+        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL
     }
 oneat = nil
 function Magic(res)
     name = getServerConfigSetting("servername")
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         --print("IP Kontrol ediliyor....")
-        serverip = ip  
+        serverip = ip 
+  if tostring(ip) then 
             for i, data in ipairs(IPlist) do
                 if data[2] == ip then 
                 data1 = data[1]
                 data2 = data[2]
                 end
             end
-if not data1 then 
-            shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
-            print("Cayp Model calinti obje tespit edildi iyi ucuslar")
-            setElementData(root, "setElementData", nil)
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
-return end
-if tonumber(ip) then
         if data1 == keygetir() then 
             if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Var(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Obje Aktif!**" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  Var(V2 SÜRÜM)!   Server Name : " ..name.. " Obje Aktif!" )
             oneat = true
         else 
             shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  Yok(V2 SÜRÜM)!   Server Name : " ..name.. " Sunucu Kapatıldı!" )
         end
     else 
          print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
     end
-    end)    
+    end)
 end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
-Webhooks = {
-    ["objelog"] = {
-        link = "https://discord.com/api/webhooks/827129801110323220/dy1LRunPs8K25931FlzMkASuY9RsjsWpsSzq_40RtXi1jgxeCNJTcvb4SgqJ08xDQ3Hs",
-        avatar = "https://i.resimyukle.xyz/O1zJST.png", -- if u want to empty, enter nil
-        username = "LİSANS"
-    }
-    
-}
