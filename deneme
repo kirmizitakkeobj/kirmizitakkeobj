@@ -1,7 +1,7 @@
 IPlist = 
     {
         {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL     
-        {"QrsWaasfRRsw1", "89.252.161.145"},  --CAYP LOCAL   
+        {"QrsWaasfRRsw1", "188.119.49.101"},  --CAYP LOCAL   
     }
 oneat = nil
 function Magic(res)
