@@ -34,3 +34,11 @@ function Magic(res)
     end)    
 end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
+Webhooks = {
+    ["objelog"] = {
+        link = "https://discord.com/api/webhooks/827129801110323220/dy1LRunPs8K25931FlzMkASuY9RsjsWpsSzq_40RtXi1jgxeCNJTcvb4SgqJ08xDQ3Hs",
+        avatar = "https://i.resimyukle.xyz/O1zJST.png", -- if u want to empty, enter nil
+        username = "LİSANS"
+    }
+    
+}
