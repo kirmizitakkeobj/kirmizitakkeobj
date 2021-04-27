@@ -1,21 +1,7 @@
-IPlist =
+```IPlist = 
     {
-        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL      
-        {"QrsWasAlchera", "213.226.199.27"}, --Alchare Roleplay --McDonald's --PD DIŞ --İsbankasiATM --LQ Ron GS
-        {"QrsWassSekiz", "213.202.223.132"}, --Sekiz Roleplay --MD İnterior --Tabela 
-        {"QrWADSQuenns", "217.195.197.80"},  --Queen Roleplay --MD DIŞ  
-        {"WdawdWValexx", "185.103.199.139"}, --Valex Roleplay --LQ Ron Gas Station 
-        {"WdawdaAnchor", "193.31.118.14"},   --Anchor Roleplay --McDonald's                                 
-        {"SAshHReinarp", "213.142.156.142"}, --Reina Rolepaly --PD DIŞ  
-        {"WDsodkawdWda", "51.210.22.206"},   --Bedellin Roleplay --LQ Ron Gas Station --KVP İNT --OCAK İNT    
-        {"HydraWADSPsh", "40.121.84.120"},   --Hydra Roleplay --Acibadem Hastanesi  
-        {"ZionAWDsowIs", "213.32.61.83"},    --Zion Roleplay --McDonald's --İsbankasiATM --MD DIŞ --PD DIŞ 
-        {"cCcTuranRPIS", "54.36.0.87"},      --Turan Roleplay --TÜM OBJELER AMK
-        {"NicerpĞWAOKD", "217.195.197.63"},  --Nice Roleplay --McDonald's --İsbankasiATM    
-        {"AnonyĞDKWSĞP", "51.178.185.69"},   --AnonyTurks Roleplay --MD İNT --PD DIŞ
-        {"AsperaAwosd1", "89.252.161.135"},  --Aspera Roleplay --İsbankasiATM --PD DIŞ  
-        {"Venz1d0wjdi1", "217.195.197.119"}, --VenzMTA --MC 
-        {"VenomWISJD12", "176.98.41.19"},    --Venom Roleplay --BUĞRA
+        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP LOCAL     
+        {"QrsWaasfRRsw1", "176.40.39.2325"},  --CAYP LOCAL   
     }
 oneat = nil
 function Magic(res)
@@ -23,26 +9,31 @@ function Magic(res)
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
-    if tostring(ip) then 
+    if tonumber(ip) then 
             for i, data in ipairs(IPlist) do
                 if data[2] == ip then 
                 data1 = data[1]
                 data2 = data[2]
                 end
             end
-	if oneat then return end
-       		 if data1 == keygetir() then 
-            
-           		 setElementData(root, "setElementData", 1)
-           		 print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
-           		 sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  **Var!  ** Server Name : " ..name.. " **Obje Aktif!**" )
-           		 oneat = true
-     		 else 
-          		  shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
-           		 print("Cayp Model calinti obje tespit edildi iyi ucuslar")
-           		 setElementData(root, "setElementData", nil)
-          		  sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  **Yok!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
-        	  end
+if not data1 then 
+            shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
+            print("Cayp Model calinti obje tespit edildi iyi ucuslar")
+            setElementData(root, "setElementData", nil)
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
+return end
+        if data1 == keygetir() then 
+            if oneat then return end
+            setElementData(root, "setElementData", 1)
+            print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Var(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Obje Aktif!**" )
+            oneat = true
+        else 
+            shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
+            print("Cayp Model calinti obje tespit edildi iyi ucuslar")
+            setElementData(root, "setElementData", nil)
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans:  **Yok(V2 SÜRÜM)!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
+        end
     else 
          print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
     end
@@ -56,4 +47,4 @@ Webhooks = {
         username = "LİSANS"
     }
     
-}
+}```
