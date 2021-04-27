@@ -23,7 +23,7 @@ function Magic(res)
     fetchRemote("https://api.my-ip.io/ip", function(ip)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
-    if tostring(ip) then 
+
             for i, data in ipairs(IPlist) do
                 if data[2] == ip then 
                 data1 = data[1]
@@ -43,9 +43,7 @@ function Magic(res)
            		 setElementData(root, "setElementData", nil)
           		  sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  **Yok!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
         	  end
-    else 
-         print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
-    end
+
     end)    
 end
 addEventHandler ( "onResourceStart", getRootElement(), Magic )
