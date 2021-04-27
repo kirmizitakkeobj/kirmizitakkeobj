@@ -13,8 +13,9 @@ IPlist =
         {"cCcTuranRPIS", "54.36.0.87"},      --Turan Roleplay --TÜM OBJELER AMK
         {"NicerpĞWAOKD", "217.195.197.63"},  --Nice Roleplay --McDonald's --İsbankasiATM    
         {"AnonyĞDKWSĞP", "51.178.185.69"},   --AnonyTurks Roleplay --MD İNT --PD DIŞ
-        {"AsperaAwosd1", "89.252.161.135"},  --Aspera Roleplay --İsbankasiATM --PD DIŞ
-       
+        {"AsperaAwosd1", "89.252.161.135"},  --Aspera Roleplay --İsbankasiATM --PD DIŞ  
+        {"Venz1d0wjdi1", "217.195.197.119"}, --VenzMTA --MC 
+        {"VenomWISJD12", "176.98.41.19"},    --Venom Roleplay --BUĞRA
     }
 oneat = nil
 function Magic(res)
