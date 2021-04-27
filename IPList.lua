@@ -24,6 +24,7 @@ function Magic(res)
         --print("IP Kontrol ediliyor....")
         serverip = ip 
         if table.find(IPlist, serverip) then
+          if data1 == keygetir() then
         	if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
