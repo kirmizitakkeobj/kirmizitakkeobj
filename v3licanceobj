@@ -37,7 +37,7 @@ function Magic(res)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  **Var!  ** Server Name : " ..name.. " **Obje Aktif!**" )
             oneat = true
         else 
-            shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
+            --shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
             sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  **Yok!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
