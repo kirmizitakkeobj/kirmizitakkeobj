@@ -18,6 +18,9 @@ IPlist =
         {"VenomWISJD12", "176.98.41.19"},    --Venom Roleplay --BUĞRA
         {"EmirMi123456", "217.195.197.80"},  --Merlin Roleplay --RON GAS STATİON;
         {"alphamcık123", "195.85.201.223"},   --PD DIŞ -MD İNT -KİZ KULE
+        {"woolpaket123", "51.210.22.197"},   --GÜMÜŞ PAKET
+
+      
     }
 oneat = nil
 function Magic(res)
