@@ -1,6 +1,6 @@
 IPlist =
     {
-        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP VDS     
+        {"QrsWaasfRRsw", "91.151.88.5"},  --CAYP VDS     
         {"QrsWasAlchera", "213.226.119.27"}, --Alchare Roleplay --McDonald's --PD DIŞ --İsbankasiATM --LQ Ron GS
         {"QrsWassSekiz", "213.202.223.132"}, --Sekiz Roleplay --MD İnterior --Tabela 
         {"DWASHJWDSĞSS", "212.64.215.240"},  --Queen Roleplay --MD DIŞ  
@@ -23,8 +23,7 @@ IPlist =
         {"yigoza811522", "51.91.170.200"},   --White Roleplay --PD DIŞ
         {"methmetaliii", "78.135.81.107"},   --Unity Roleplay --İş BankasİATM
         {"artexwastrp1", "217.195.197.102"},   --Wast Roleplay --GÜMÜS PAKET
-        {"efebenimyarramiyesin", "2.59.116.202"},   --FORSEX
-        {"aileithyia123", "91.151.88.5"},   --SEMTRP --PD DIŞ
+        {"efebenimyarramiyesin", "2.59.116.202"},   --FORSEx
 
 
       
