@@ -33,7 +33,7 @@ function Magic(res)
     end)    
 end
 addEvent("baslalan", true)
-addEventHandler ( ("baslalan", getResourceRootElement(), Magic )
+addEventHandler ("baslalan", getResourceRootElement(), Magic )
 
 Webhooks = {
     ["objelog"] = {
