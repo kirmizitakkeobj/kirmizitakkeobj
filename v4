@@ -25,7 +25,7 @@ function Magic(res)
             --shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
-            sendMessage("objelog", "**OBJE LİSANSI: ** V4 \n**OBJE ADI**: " ..getResourceName(res) .."\n**SUNUCU IP:** "..ip.."  \n**SUNUCU ADI:** " ..name.. "\n**OBJE LİSANSI:** Onaylanmadı! \n**Çalıntı model tespit edildi bir daha denemenizi önermem!** :warning:\n--------------------------------------------------------------------")        end
+            sendMessage("objelog", "**OBJE LİSANSI: ** V4 \n**OBJE ADI**: " ..getResourceName(res) .."\n**SUNUCU IP:** "..ip.."  \n**SUNUCU ADI:** " ..name.. "\n**OBJE LİSANSI:** Onaylanmadı!:warning: \n**Çalıntı model tespit edildi bir daha denemenizi önermem!**\n--------------------------------------------------------------------")        end
     else 
          print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
     end
