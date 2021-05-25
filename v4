@@ -1,6 +1,7 @@
 IPlist =
     {
-        {"QrsWaasfRRsw", "91.151.88.5"},  --CAYP VDS     
+        {"QrsWaasfRRsw", "91.151.88.5"},  --Semt Roleplay
+        {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP VDS     
         {"QrsWasAlchera", "213.226.119.27"}, --Alchare Roleplay --McDonald's --PD DIŞ --İsbankasiATM --LQ Ron GS
         {"QrsWassSekiz", "213.202.223.132"}, --Sekiz Roleplay --MD İnterior --Tabela 
         {"DWASHJWDSĞSS", "212.64.215.240"},  --Queen Roleplay --MD DIŞ  
