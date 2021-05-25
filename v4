@@ -19,18 +19,18 @@ function Magic(res)
             if oneat then return end
             setElementData(root, "setElementData", 1)
             print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
-            sendMessage("objelog", "**OBJE LİSANSI:** V4" "\n**OBJE ADI:** "..getResourceName(res))
+            sendMessage("objelog", "**OBJE LİSANSI: ** V4 " "**OBJE ADI**: " ..getResourceName(res) .."\nSunucu IP: "..ip.." \nLisans: Var \nSunucu Adı: "
             oneat = true
         else 
             --shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
             print("Cayp Model calinti obje tespit edildi iyi ucuslar")
             setElementData(root, "setElementData", nil)
-            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  **Yok!  ** Server Name : " ..name.. " **Sunucu Kapatıldı!**" )
+            sendMessage("objelog", getResourceName(res).. " adlı objeyi kullanan server ip :   "  ..ip.." Lisans(V3 SÜRÜM):  Yok!   Server Name : " ..name.. " Sunucu Kapatıldı!" )
         end
     else 
          print("Sistem kendini güncelliyor 2 dakika sonra restart atın!")
     end
-    end)    
+    end)
 end
 addEvent("baslalan", true)
 addEventHandler ("baslalan", getResourceRootElement(), Magic )
@@ -41,5 +41,5 @@ Webhooks = {
         avatar = "https://i.resimyukle.xyz/O1zJST.png", -- if u want to empty, enter nil
         username = "Cayp Model"
     }
-    
+
 }
