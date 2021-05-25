@@ -1,6 +1,8 @@
 IPlist =
     {
         {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP VDS
+        {"kadirtitanrp", "213.226.119.27"},  --Titan RP
+
     }
 oneat = nil
 function Magic(res)
