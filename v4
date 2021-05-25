@@ -2,6 +2,10 @@ IPlist =
     {
         {"QrsWaasfRRsw", "89.252.161.144"},  --CAYP VDS
         {"kadirtitanrp", "213.226.119.27"},  --Titan RP
+        {"fatihangelsr", "213.226.119.27"},  --Angels RP --Grotti Galeri
+        {"artexgumus12", "217.195.197.24"},  --Wast RP --GUMUS PAKET VE TURK PAKET
+
+
 
     }
 oneat = nil
