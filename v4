@@ -38,12 +38,12 @@ function Magic(res)
         if data1 == keygetir() then 
             if oneat then return end
             setElementData(root, "setElementData", 1)
-            print ("Cayp Model orjinal obje kullandiginiz icin tesekkurler.")
+            print ("Lisans ONAYLANDI! İyi kullanımlar.")
             sendMessage("objelog", "**OBJE LİSANSI: ** V4 \n**OBJE ADI**: " ..getResourceName(res) .."\n**SUNUCU IP:** "..ip.."  \n**SUNUCU ADI:** " ..name.. "\n**OBJE LİSANSI:** Onaylandı! \n**Orjinal model kullandığınız için teşekkür ederiz!**\n--------------------------------------------------------------------")
             oneat = true
         else 
             --shutdown ("Cayp Model calinti obje tespit edildi iyi ucuslar!")
-            print("Cayp Model calinti obje tespit edildi iyi ucuslar")
+            print("Lisans ONAYLANMADI! Cayp Model ile iletisime geciniz.")
             setElementData(root, "setElementData", nil)
             sendMessage("objelog", "**OBJE LİSANSI: ** V4 \n**OBJE ADI**: " ..getResourceName(res) .."\n**SUNUCU IP:** "..ip.."  \n**SUNUCU ADI:** " ..name.. "\n**OBJE LİSANSI:** Onaylanmadı!:warning: \n**Çalıntı model tespit edildi bir daha denemenizi önermem!**\n--------------------------------------------------------------------")        end
     else 
